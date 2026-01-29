@@ -1,6 +1,6 @@
 # Generating Bidirectional TCP Flow Data from PCAP Files for Network Forensics
 
-## Introduction
+### Introduction
 Due to the widespread internet connectivity, cloud computing, Internet of Things (IoT) devices, and remote working environments, network-based cyberattacks have increased dramatically over the past ten years. In order to interfere with services, steal confidential data, or access systems without authorisation, hackers are increasingly focussing on network protocols and infrastructure.
 Network traffic analysis, or NTA, is essential to contemporary cybersecurity and digital forensics investigations. In order to identify potential attackers, reconstruct security incidents, and detect malicious activity, it entails capturing and analysing network packets. NTA is now crucial for incident response, threat hunting, and legal investigations since many cyberattacks depend on network communication.
 Packet Capture (PCAP) files are commonly used to record individual packets sent over a network in order to store raw network traffic data. These files are trustworthy forensic artifacts because they retain specific information like timestamps, source and destination IP addresses, ports, protocols, and payload data. Investigators can reconstruct attack timelines, examine communication between compromised systems and external entities, and analyze malicious behavior using PCAP files.
@@ -10,7 +10,7 @@ However, it can be difficult and time-consuming to analyze raw packet-level data
 This article is based on a self-learning exercise carried out as part of my cybersecurity coursework. The work involved practical exploration of PCAP files, TCP flow construction, and feature extraction for forensic analysis. Writing this article helped consolidate my understanding of how raw network traffic can be transformed into structured data for investigation and security research.
 
 ---
-## PCAP Files in Digital Forensics
+### PCAP Files in Digital Forensics
 One popular format for storing network packet captures is Packet Capture (PCAP) files. The raw bytes of network communication across OSI layers, usually from Layer 2 to Layer 7, are preserved in a PCAP file, which contains an exact copy of every packet seen on a network interface. Because of this degree of detail, PCAP files are among the most thorough sources of network evidence.
 Raw network traffic data taken straight from a network interface is stored in PCAP files. Transport protocols like TCP, UDP, and ICMP, source and destination IP addresses, MAC addresses, source and destination ports, timestamps, packet sizes, protocol flags, and frequently the actual packet payload are all included in this data. PCAP files offer an accurate and comprehensive record of network activity since this data is captured at the packet level.
 Preserving raw PCAP data is critical to maintaining evidence integrity and credibility. Raw packet captures allow accurate reconstruction of events without information loss or analyst interpretation bias. They support verifiable timelines, enable reanalysis as new techniques emerge, and help meet legal, compliance, and audit requirements. As a result, PCAP files serve as a foundational artifact in network-based digital forensic investigations.
